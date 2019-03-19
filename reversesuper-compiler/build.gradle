@@ -1,5 +1,14 @@
 apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
 
+publish {
+    userOrg = 'chenille'    //bintray.com用户名
+    groupId = 'com.chenzhiyuan'    //jcenter上的路径
+    artifactId = 'reverseImpl-compiler'    //自己的maven上添加的包名
+    publishVersion = '1.1.0'    //版本号
+    desc = 'a tool of automatically generated interface and super'    //描述
+    website = 'https://github.com/UserChenille/ReverseImpl-master'    //网站，不重要；
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //项目注解
@@ -24,4 +33,4 @@ allprojects {
     }
 }
 
-apply from : 'maven.gradle'
+//apply from : 'maven.gradle'

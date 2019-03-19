@@ -22,8 +22,8 @@ ext {
             developerName : '陈志远', // 开发者姓名
             developerEmail: 'asdtian123@icloud.com', // 开发者邮箱
 
-            binrayLibraryAnnotation : "ReverseImpl-annotation", // 项目在bintray上的名称
-            binrayLibraryCompiler : "ReverseImpl-compiler", // 项目在bintray上的名称
+            binrayLibraryAnnotation : "ReverseSuper-annotation", // 项目在bintray上的名称
+            binrayLibraryCompiler : "ReverseSuper-compiler", // 项目在bintray上的名称
             bintrayRepo   : "maven", // 发布到自己在bintray的哪个仓库中，一般默认maven
             bintrayUser   : 'Chenille', // bintray的用户名
             bintrayLicense: "Apache-2.0" // 指定bintray上的开源协议

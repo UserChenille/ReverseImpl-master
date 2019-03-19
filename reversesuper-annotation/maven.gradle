@@ -38,6 +38,14 @@ install {
         }
     }
 }
+publish {
+    userOrg = 'chenille'    //bintray.com用户名
+    groupId = 'com.chenille'    //jcenter上的路径
+    artifactId = 'reverseImpl'    //自己的maven上添加的包名
+    publishVersion = '1.1.0'    //版本号
+    desc = 'desc...'    //描述
+    website = 'https://github.com/UserChenille/ReverseImpl-master'    //网站，不重要；
+}
 if (project.hasProperty("android")) {
     task sourcesJar(type: Jar) {
         from android.sourceSets.main.java.srcDirs

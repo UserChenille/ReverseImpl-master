@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -25,6 +26,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //项目注解
@@ -33,7 +35,7 @@ dependencies {
     annotationProcessor project(':reversesuper-compiler')
 
 
-    implementation 'com.novoda:bintray-release:0.6.1'
+
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

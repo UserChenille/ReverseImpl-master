@@ -65,8 +65,6 @@ public class AccountManagerImpl implements AccountManager {
 ```
 当```@ReverseImpl```注解在目标类上，点击Build-Rebuild，就会动态生成对应的接口类。并且最终的生成代码其实和目标类在相同包下（src包和build包打包时合并）。
 
-![生成的代码](https://github.com/Chenille/ReverseSuper/blob/master/image/rebuild-code.png)
-
 可以看到一键Rebuild动态生成代码，省略了对现有代码的抽象public方法的手动操作，效率飞快，而且还有对方法注解、参数注解的处理。
 
 同样还有```@ReverseExtend```注解对目标类生成抽象类。使用类似参见[Adapter](https://github.com/Chenille/ReverseSuper/blob/master/app/src/main/java/com/model/Chenille/reversesuper/Adapter.java)

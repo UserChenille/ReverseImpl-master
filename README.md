@@ -200,7 +200,6 @@ public @interface ReverseExtend {
 
 # 最后
 其实针对简单少量的实现类需要抽象成接口，可以通过AS的`Extract`功能，通过窗口选择生成代码。
-![as-提取功能](https://github.com/Chenille/ReverseSuper/blob/master/image/as-extract.png)
 
 但是AS目前只提供
 - 只提供实现类提取接口，没有提取抽象类功能。

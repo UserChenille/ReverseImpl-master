@@ -1,24 +1,15 @@
-# [ReverseSuper](https://github.com/Chenille/ReverseSuper)
+# [ReverseImpl](https://github.com/Chenille/ReverseImpl)
 
-[ ![Download](https://api.bintray.com/packages/Chenille/maven/ReverseSuper-annotation/images/download.svg) ](https://bintray.com/Chenille/maven/ReverseSuper-annotation/_latestVersion)
-[ ![Download](https://api.bintray.com/packages/Chenille/maven/ReverseSuper-compiler/images/download.svg) ](https://bintray.com/Chenille/maven/ReverseSuper-compiler/_latestVersion)
 
 # 作用
 一键生成动态代码，支持生成接口/抽象类
 
-# 更新
-
-- 1.2.1：完善检查逻辑
-- 1.2.2：新增代码输出模式，可以指定代码生成到src目录，避免每次生成
-- 1.2.3：使用命令设计模式，优化代码结构
-- 1.2.4：生成的方法支持受检异常的声明
-- 1.2.5：新增@ReverseSkip注解，支持对目标类特定方法的忽略处理
 
 # 引用
 
 ```java
-    implementation 'com.Chenille:reversesuper-annotation:1.2.5'//注解库
-    annotationProcessor 'com.Chenille:reversesuper-compiler:1.2.5'//代码生成工具库
+    implementation 'com.chenille:reverseImpl-annotation:1.1.0'//注解库
+    annotationProcessor 'com.chenille:reverseImpl-compiler:1.1.0'//代码生成工具库
 ```
 
 # 使用

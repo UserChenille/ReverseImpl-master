@@ -1,24 +1,18 @@
-# [ReverseSuper](https://github.com/Chenille/ReverseSuper)
+还在为MVP要写无数的接口而烦恼吗？重复的创建各种父类是不是很辛苦？
 
-[ ![Download](https://api.bintray.com/packages/Chenille/maven/ReverseSuper-annotation/images/download.svg) ](https://bintray.com/Chenille/maven/ReverseSuper-annotation/_latestVersion)
-[ ![Download](https://api.bintray.com/packages/Chenille/maven/ReverseSuper-compiler/images/download.svg) ](https://bintray.com/Chenille/maven/ReverseSuper-compiler/_latestVersion)
+都说程序员是世界上最会偷懒的生物；
+
+来试试ReverseImpl吧！
 
 # 作用
 一键生成动态代码，支持生成接口/抽象类
 
-# 更新
-
-- 1.2.1：完善检查逻辑
-- 1.2.2：新增代码输出模式，可以指定代码生成到src目录，避免每次生成
-- 1.2.3：使用命令设计模式，优化代码结构
-- 1.2.4：生成的方法支持受检异常的声明
-- 1.2.5：新增@ReverseSkip注解，支持对目标类特定方法的忽略处理
 
 # 引用
 
 ```java
-    implementation 'com.Chenille:reversesuper-annotation:1.2.5'//注解库
-    annotationProcessor 'com.Chenille:reversesuper-compiler:1.2.5'//代码生成工具库
+    implementation 'com.chenille:reverseImpl-annotation:1.1.0'//注解库
+    annotationProcessor 'com.chenille:reverseImpl-compiler:1.1.0'//代码生成工具库
 ```
 
 # 使用
@@ -73,8 +67,6 @@ public class AccountManagerImpl implements AccountManager {
 }
 ```
 当```@ReverseImpl```注解在目标类上，点击Build-Rebuild，就会动态生成对应的接口类。并且最终的生成代码其实和目标类在相同包下（src包和build包打包时合并）。
-
-![生成的代码](https://github.com/Chenille/ReverseSuper/blob/master/image/rebuild-code.png)
 
 可以看到一键Rebuild动态生成代码，省略了对现有代码的抽象public方法的手动操作，效率飞快，而且还有对方法注解、参数注解的处理。
 

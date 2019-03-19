@@ -11,8 +11,18 @@
 # 引用
 
 ```java
-    implementation 'com.chenille:reverseImpl-annotation:1.1.0'//注解库
-    annotationProcessor 'com.chenille:reverseImpl-compiler:1.1.0'//代码生成工具库
+    //在项目根目录build.gradle下添加maven仓库
+    allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://dl.bintray.com/chenille/maven' }
+        }
+    }
+    
+    引用
+    implementation  'com.chenzhiyuan:reverseImpl-annotation:1.1.0'//注解库
+    annotationProcessor 'com.chenzhiyuan:reverseImpl-compiler:1.1.0'//代码生成工具库
 ```
 
 # 使用
